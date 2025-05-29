@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML формы</title>
+	</head>
+	<body style="background-color: #59bbe9">
+		<form>
+            <style>
+                form{
+                background-color: white;
+                width:70%;
+                margin:0 auto;
+                padding:15px;
+                }
+            </style>
+
+            <legend style="font-size: 15pt;">Текстовые поля</legend>
+			<lable>Ваше имя: <input type = "text"  name = "firstname" placeholder =  "Имя" required> <br> <br></lable>
+			<label>Ваш email: <input type = "email" name = "email" placeholder =  "Email" required> <br> <br></label>
+            <label>Текст сообщения: <br><textarea placeholder="Введите ваше сообщение" cols=45%></textarea></label><br><br>
+
+            <input type = "submit" name = "submit" value = "отправить">
+            <input type = "reset" name = "reset" value = "очистить">
+			
+
+            <legend style="font-size: 15pt;"><br>Иные элементы управления формой</legend>
+
+            <label><input type="file" value="Выберите файл"><label><br> 
+            <label>Укажите дату - <input type="date"><label><br>
+            <label>Кому отправить - 
+            <select>
+                <option>Директору</option>
+                <option>В отдел продаж</option>
+            </select></label>
+            <label><br>Отправить копию письма себе на почту?
+                Да <input  type = "radio" name = "primer" value = "Yes">
+                Нет <input type = "radio" name = "primer" value = "No"></label><br>
+            <label>Каким образом направить вам отчёт<br>
+                <input type = "checkbox" name = "type3" value = "high" checked>По электронной почте<br>
+                <input type = "checkbox" name = "type4" value = "busy">По почте на бумажном носителе<br>
+                <input type = "checkbox" name = "type5" value = "cat">Перезвонить по телефону<br>
+                <br>
+		</form>
+	</body>
+</html>

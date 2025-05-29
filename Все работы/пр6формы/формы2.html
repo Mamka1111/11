@@ -1,0 +1,37 @@
+
+<style>
+    form{
+    width:70%;
+    margin:0 auto;
+    padding:15px;
+    }
+</style>
+<form action="/" method="post">
+    <fieldset>
+    <legend>Оформление заказа</legend>
+    <label><b>Введите контактные данные и адрес доставки:</b></label><br><br>
+
+    <label> Контактное лицо: <input type="text" placeholder="Введите имя и фамилию" required></input></label>
+    <label> Ваш адрес: <input type="text" placeholder="Введите ваш адрес" required></input></label><br><br>
+
+    <label> Телефон: <input type="tel" placeholder="Введите ваш телефон" required></input></label>
+    <label> Email: <input type="email" placeholder="ваш e-mail" required></input></label><br>
+
+    <label><br><b>Выберите дату и время доставки:</b></label><br><br>
+    <label>Дата доставки: <input type="date"></label>
+    <label>Время доставки: <input type="time"></label><br>
+
+    <label><br><b>Оплата</b></label><br><br>
+
+    <input type="radio" name="primer">Наличными <input type="radio" name="primer" checked>По карте</label><br>
+
+    <label><br><b>Прочие параметры:</b><br><br>
+        <input type="checkbox" name="a" value="1">Домофон
+        <input type="checkbox" name="a" value="2">Неисправен звонок
+        <input type="checkbox" name="a" value="3">Собака во дворe
+        <input type="checkbox" name="a" value="4">Вход с заднего фасада
+        <input type="checkbox" name="a" value="5">Вход с торца здания
+    </label>
+    <br><br><button type = "submit" name = "submit">подтвердить</button>
+    </fieldset>
+</form>
